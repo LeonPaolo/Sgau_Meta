@@ -48,7 +48,7 @@
         <div id="ImgHeader">
             <div id="TextoH1">
                 <div id="Background">
-                    <h1>Seja bem vindo(a) ao blog do <b>SGAU</b></h1>
+                    <h1>Seja bem vindo(a) ao site do <b>SGAU</b></h1>
                 </div>
            </div>
         </div>

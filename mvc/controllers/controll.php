@@ -22,6 +22,7 @@ if (isset($_POST['Enviar']) && $_POST['Enviar'] === 'Enviar') {
 			foreach ($session_colaborador as $login_colaborador) {
 				$_SESSION['nome'] = $login_colaborador->nome;
 				$_SESSION['sobrenome'] = $login_colaborador->sobrenome;
+				$_SESSION['id_cidadao'] = $login_colaborador->id_colaborador;
 				header("location: ../../painelAdm.php");
 			}
 		}
@@ -31,6 +32,7 @@ if (isset($_POST['Enviar']) && $_POST['Enviar'] === 'Enviar') {
 		foreach ($session_cidadao as $login_cidadao) {
 			$_SESSION['nome'] = $login_cidadao->nome;
 			$_SESSION['sobrenome'] = $login_cidadao->sobrenome;
+			$_SESSION['id_cidadao'] = $login_cidadao->id_cidadao;
 			header("location: ../../painelUsuario.php");
 
 		}

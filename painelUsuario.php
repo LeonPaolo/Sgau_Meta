@@ -41,6 +41,7 @@
                          #montar nome do usuario logado!
                          session_start();
                          echo $_SESSION['nome']. "&nbsp". $_SESSION['sobrenome'];
+                         $id_usuario = $_SESSION['id_cidadao'];
                          ?>                         
                           </div>
 
@@ -54,12 +55,16 @@
 
                <!-- #################### DROP DAWN DO MENU CADASTRAR ####################### -->
                     <ul class="linksControle">
+                        <li><a href="?p=<?php echo base64_encode('cadastroRequerimento')?>"><i class="fas fa-edit"></i> &nbsp;Requerimento</a></li>
+                        
+                    </ul>
 
-                         <li><a href="?p=<?php echo base64_encode(' cadastroRequerimento ')?>"><i class="fas fa-edit"></i> &nbsp;Cadastro de Requerimento</a></li>
-
-                         <li><a href="?p=<?php echo base64_encode(' analiseRequerimento ') ?>"><i class="fas fa-edit"></i> &nbsp;Análise do Requerimento</a></li>
-
+                    <ol>
+                         <li><a href="index.php" title="Fechar"><i class="fas fa-sign-out-alt"></i> Sair</a></li>
+                    </ol>
+               
                </nav>
+
 
           </div>
  

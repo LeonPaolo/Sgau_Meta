@@ -41,6 +41,7 @@
                          //Logar com o nome do colaborador
                          session_start();
                          echo $_SESSION['nome'] . "&nbsp" . $_SESSION['sobrenome'];
+                         $IdColaboradorLogado = $_SESSION['id_colaborador'];
                          ?>
                          </div>
 
@@ -118,15 +119,21 @@
 
                                    <li><a href="?p=<?php echo base64_encode ( 'densidadeArvoresHabitante' ) ?>">Densidades de árvores por habitante</a></li>
 
+
                               </ul>
 
                          </li>
+                          <li><a href="?p=<?php echo base64_encode( 'analiseRequerimento' ) ?>"><i class="fas fa-edit"></i> &nbsp;Análise do Requerimento</a></li>
 
                     </ul>
+                     <ol>
+                         <li><a href="index.php" title="Fechar"><i class="fas fa-sign-out-alt"></i> Sair</a></li>
+                    </ol>
 
                </nav>
 
           </div>
+
  
           <?php include_once 'mvc/controllers/painel.php'?>
      
